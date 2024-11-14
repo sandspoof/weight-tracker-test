@@ -17,6 +17,7 @@ We think the easiest way for you to submit your code, is to:
 
 You may also `compress` (`.zip`) your code and send it back to us. However we aim to see your `git` knowledge (basics: `clone`, `commit`, `push`)
 
+## Test
 ### Objective
 
 To build a simple weight tracking application using React, demonstrating your proficiency in:
