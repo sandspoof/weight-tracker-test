@@ -40,7 +40,7 @@ To build a simple weight tracking application using React, demonstrating your pr
 ## Application Requirements
 
 ### Pages:
-1. Login Page (login.tsx)
+1. Login Page (`login.tsx`)
 > Features:
 - Two inputs: 
   - Email
@@ -48,10 +48,10 @@ To build a simple weight tracking application using React, demonstrating your pr
 - A login button
 - Hardcode a valid email and password for testing (e.g., `test@example.com` / `password123`).
 
-2. Main Page (main.tsx)
+2. Main Page (`main.tsx`)
 > Features:
 - Display three predefined weights in a list format.
-- The list should be managed through React state. Using Redux is a bonus, but not required.
+- The list should be managed through React state. Using `Redux` is a bonus, but not required.
 - An "Add Weight" button to toggle visibility of an AddWeight component. It can be hidden/shown below the list, or it can be a modal/popup.
 
 ### Components:
