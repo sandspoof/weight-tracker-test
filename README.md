@@ -12,7 +12,7 @@ Welcome to our Weight Tracker Test! This repository is designed to evaluate your
 To build a simple weight tracking application using React, demonstrating your proficiency in:
 - React fundamentals (hooks, components, state management)
 - Basic routing
-- Simple form handling on a login page
+- Simple form/input handling on a login page
 - Conditional rendering, e.g. hide/show a component
 
 ## Setup Instructions
@@ -20,7 +20,7 @@ To build a simple weight tracking application using React, demonstrating your pr
 1. **Initialize your React App**: Use `create-react-app` or any similar tool to set up your project. 
 > PS: Setting up React from scratch using Webpack is a bonus, but not required.
 2. Install Dependencies:
-- react (Ensure it's v18 or later)
+- react (Ensure it's `v18` or later)
 - react-router-dom for navigation
 - tailwindcss for styling (optional but recommended)
 - Any additional packages you believe will enhance the application
