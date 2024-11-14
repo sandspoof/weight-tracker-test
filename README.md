@@ -62,7 +62,8 @@ It can be hidden/shown below the Main list, or it can be a modal/popup.
 - Upon submission, the new weight should update the list in Main Page.
 
 ### Additional Notes:
-- The application does not need to connect to a database. All data can be managed in-memory via state. If you want to, you may use a MongoDB Docker Container.
+- The application does not need an API. optionally, it would be a big bonus it you have a very _basic_ `ExpressJS` with a `/login` endpoint.
+- The application/api does not need to connect to a database. All data can be managed in-memory via state. If you want to, you may use a MongoDB Docker Container.
 - Focus on functionality over aesthetics, but feel free to apply sensible styling.
 - Use React Router for navigation between the login and main pages.
 
