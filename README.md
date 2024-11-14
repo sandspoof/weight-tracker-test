@@ -25,7 +25,7 @@ To build a simple weight tracking application using React, demonstrating your pr
 - tailwindcss for styling (optional but recommended)
 - Any additional packages you believe will enhance the application
 
-### Application Requirements
+## Application Requirements
 
 ### Pages:
 1. Login Page (login.tsx)
