@@ -44,6 +44,7 @@ To build a simple weight tracking application using React, demonstrating your pr
 
 ### Components:
 > Add Weight Component (`add_weight.tsx`)
+It can be hidden/shown below the Main list, or it can be a modal/popup.
 - Should appear when the "Add Weight" button is clicked.
 - Contains an input field for weight entry and a submit/save button.
 - Upon submission, the new weight should update the list in Main Page.
