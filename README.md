@@ -7,6 +7,16 @@ Welcome to our Weight Tracker Test! This repository is designed to evaluate your
 - TailwindCSS
 - TypeScript (JavaScript is also fine, but TypeScript is preferred)
 
+### How to submit your code:
+We think the easiest way for you to submit your code, is to:
+1. `Fork` this repository.
+2. `Clone` your fork on your machine locally.
+2. Make modifications to your `fork`.
+3. Once you are done, `push` your code to your own fork.
+4. Notify us so that we can start reviewing your fork! We should be able to see your fork inside `GitHub`.
+
+You may also `compress` (`.zip`) your code and send it back to us. However we aim to see your `git` knowledge (basics: `clone`, `commit`, `push`)
+
 ### Objective
 
 To build a simple weight tracking application using React, demonstrating your proficiency in:
