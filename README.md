@@ -53,4 +53,4 @@ To build a simple weight tracking application using React, demonstrating your pr
 - Focus on functionality over aesthetics, but feel free to apply sensible styling.
 - Use React Router for navigation between the login and main pages.
 
-## Good luck! We look forward to reviewing your implementation of this weight tracking application. If you have any questions, feel free to ask during the interview process.
+## Good luck! We look forward to reviewing your implementation of this weight tracking application. If you have any questions, feel free to ask!
