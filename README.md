@@ -31,9 +31,10 @@ To build a simple weight tracking application using React, demonstrating your pr
 1. **Initialize your React App**: Use `create-react-app` or any similar tool to set up your project. 
 > PS: Setting up React from scratch using Webpack is a bonus, but not required.
 2. Install Dependencies:
-- react (Ensure it's `v18` or later)
-- react-router-dom for navigation
-- tailwindcss for styling (optional but recommended)
+- `react` (Ensure it's `v18` or later)
+- `react-router-dom`
+- `tailwindcss`
+- `typescript`
 - Any additional packages you believe will enhance the application
 
 ## Application Requirements
