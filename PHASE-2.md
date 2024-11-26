@@ -1,6 +1,8 @@
-# Weight Tracker Interview Test - Phase 2
+# Phase 2
 
-## Phase 2 Objectives:
+## Back-End (NodeJS + Express)
+
+> Phase 2 Objectives:
 - Develop additional API endpoints with ExpressJS.
 - Enhance the frontend to interact with these endpoints.
 
