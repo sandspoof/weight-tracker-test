@@ -3,9 +3,13 @@
 Welcome to our Weight Tracker Test! This repository is designed to evaluate your coding skills, particularly in ReactJS. Here, we are interested in how you structure code, manage state, and perhaps also how you approach UI design. Creating a "pretty" web appliaction is not important here, but we do want to see you use some certain packages.
 
 ### Tech Stack
-- ReactJS
-- TailwindCSS
-- TypeScript (JavaScript is also fine, but TypeScript is preferred)
+- Phase 1
+  - ReactJS
+  - TailwindCSS
+  - TypeScript (JavaScript is also fine, but TypeScript is preferred)
+- Phase 2
+  - NodeJS
+  - Express
 
 ## How to submit your code:
 We think the easiest way for you to submit your code, is to:
@@ -18,14 +22,9 @@ We think the easiest way for you to submit your code, is to:
 You may also `compress` (`.zip`) your code and send it back to us.
 However we aim to see your `git` knowledge (basics: `clone`, `commit`, `push`)
 
-## Test
-### Objective
-
-To build a simple weight tracking application using React, demonstrating your proficiency in:
-- React fundamentals (hooks, components, state management)
-- Basic routing
-- Simple form/input handling on a login page
-- Conditional rendering, e.g. hide/show a component
+## Some tips
+1. Go through [Phase 1](https://github.com/doshexchnage/weight-tracker-test/blob/dev/PHASE-1.md) and finish it.
+2. If you feel comfortable and have enough time, continue to go through [Phase 2](https://github.com/doshexchnage/weight-tracker-test/blob/dev/PHASE-1.md) and finish it.
 
 # Phase 1
 Objective:
