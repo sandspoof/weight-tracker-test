@@ -30,9 +30,12 @@ To build a simple weight tracking application using React, demonstrating your pr
 # Phase 1
 Objective:
 - Test fundamental React skills, UI component development, and basic server interaction.
+[See here for Phase 1 instructions](https://github.com/doshexchnage/weight-tracker-test/blob/dev/PHASE-1.md)
 
 # Phase 2
 Objective:
 - Evaluate skills in creating RESTful APIs, integrating with databases (if opted for), and enhancing frontend interactions.
+
+[See here for Phase 2 instructions](https://github.com/doshexchnage/weight-tracker-test/blob/dev/PHASE-2.md)
 
 ## Good luck with both phases! We are eager to see how you advance this application from a simple static app to one interacting with a backend service! If you have any questions, feel free to ask!
