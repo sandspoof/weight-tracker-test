@@ -39,3 +39,15 @@ Objective:
 [See here for Phase 2 instructions](https://github.com/doshexchnage/weight-tracker-test/blob/dev/PHASE-2.md)
 
 ## Good luck with both phases! We are eager to see how you advance this application from a simple static app to one interacting with a backend service! If you have any questions, feel free to ask!
+
+ 
+
+ 
+# Attention: Reviewer - How to run the project
+Front-end (Vite + Reactjs):
+
+`npm run dev`
+
+Backend: 
+
+`node app.js`

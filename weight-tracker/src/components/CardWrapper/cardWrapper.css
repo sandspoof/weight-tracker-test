@@ -1,0 +1,19 @@
+@import url('../../pages/Main/main.css');
+
+.card-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--color-primary);
+    width: 1.6em;
+    height: 1.6em;
+    color: var(--color-white);
+    border-radius: var(--border-5);
+    font-weight: 600;
+
+}
+
+.card-close:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}

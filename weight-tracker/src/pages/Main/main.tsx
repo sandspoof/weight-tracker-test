@@ -1,49 +1,33 @@
-import { ReactNode } from 'react';
-import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+import { ReactNode, useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
-import './main.css'
+import "./main.css";
 
-import AddWeight from '../../components/add_weight'
+import AddWeight from "../../components/AddWeight/add_weight";
+import CardWrapper from "../../components/CardWrapper/cardWrapper";
 
 const initialWeights = ["55", "85", "110"];
 
 // Display the list of weights.
 function weights(data: Array<string>): ReactNode {
-    if (!data || Array.isArray(data) == false || data.length == 0) return <p>No weights to display</p>
+  if (!data || Array.isArray(data) == false || data.length == 0)
+    return <p>No weights to display</p>;
 
-    return (
-        data.map((weight: string, index: number) => <p key={index}>{weight} kg</p>)
-    )
-}
-
-type CardProps = {
-    children: string | JSX.Element | JSX.Element[],
-    onClosed?: () => void
-}
-
-const CardWrapper = ({ children, onClosed }: CardProps) => {
-    const [isClosed, setIsClosed] = useState<boolean>(false);
-
-    if (isClosed) return null;
-
-    function onClose() {
-        setIsClosed(true)
-        if (onClosed) onClosed();
-    }
-
-    return (
-        <div className="card">
-            <span className="card-close" onClick={onClose}>x</span>
-            {children}        
-        </div>
-    )
+  return data.map((weight: string, index: number) => (
+    <p key={index}>{weight} kg</p>
+  ));
 }
 
 const Main = () => {
-  const [allWeights, setAllWeights] = useState<Array<string>>(initialWeights)
+  const navigate = useNavigate();
+  const [allWeights, setAllWeights] = useState<Array<string>>(initialWeights);
   const [editMode, setEditMode] = useState<boolean>(false);
+
+  function isLoggedIn() {
+    const response = sessionStorage.getItem("authenticated");
+
+    if (!response || !JSON.parse(response)) navigate("/login");
+  }
 
   function onSubmit(newValue: string) {
     if (!newValue) return;
@@ -55,18 +39,32 @@ const Main = () => {
     setEditMode(true);
   }
 
+  useEffect(() => {
+    isLoggedIn();
+  });
+
   return (
     <>
-        <h1 className="text-3xl font-bold underline">
-            Weight Tracker
-        </h1>
-        <div className="list">
-            {weights(allWeights)}
-        </div>
-        {!editMode && <button title="Add new weight" onClick={addNew}>Add another...</button>}
-        {editMode && <CardWrapper onClosed={() => setEditMode(false)}><AddWeight onSubmit={onSubmit} /></CardWrapper>}
+      <div className="card">
+        <h1 className="heading">Weight Tracker</h1>
+        <div className="list">{weights(allWeights)}</div>
+      </div>
+      {!editMode && (
+        <button
+          className="button-primary"
+          title="Add new weight"
+          onClick={addNew}
+        >
+          Add another...
+        </button>
+      )}
+      {editMode && (
+        <CardWrapper onClosed={() => setEditMode(false)}>
+          <AddWeight onSubmit={onSubmit} />
+        </CardWrapper>
+      )}
     </>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;

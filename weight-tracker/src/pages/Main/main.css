@@ -9,67 +9,137 @@
     --color-white: #fff;
     --color-black: #000;
     --color-grey: #d1d1d1;
+    --color-warning: #ffa600;
+    --color-error: #ff0000;
+    --color-light: #bebebe;
+    --color-medium: #838383;
+    --font-color-dark: #313131;
+    --border-5: 5px;
+    --font-size-12: 12px;
+    --font-size-16: 16px;
+    --font-size-18: 18px;
+    --font-size-22: 22px;
+    --shadow: -1px 1px 2px 1px #ffffff52;
+    --button-primary: var(--color-primary);
   }
 }
 
 #root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.react:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
-  }
-  
-  @keyframes logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    a:nth-of-type(2) .logo {
-      animation: logo-spin infinite 2s linear;
-    }
-  }
-  
-  /* Card */
-  .card {
-    padding: 2em;
-  }
-  
-  .read-the-docs {
-    color: #888;
-  }
-  
-  /* List */
-  .list {
-    border: 1px solid #fff;
-    border-radius: 6px;
-  }
-  .list > * {
-    margin: 0;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: var(--font-color-dark);
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
   }
 
-  /* Form */
-  .form-group {
-    padding: 0.3em;
-    label,
-    input {
-      display: block
-    }
+  to {
+    transform: rotate(360deg);
   }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 2s linear;
+  }
+}
+
+/* Card */
+.card {
+  position: relative;
+  background-color: var(--color-grey);
+  padding: 2em;
+  margin: 2em 0;
+  border-radius: var(--border-5);
+  box-shadow: var(--shadow);
+
+  .heading {
+    margin-top: 0;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* List */
+.list {
+  border: 1px solid var(--color-medium);
+  border-radius: 6px;
+
+  :nth-child(odd) {
+    background-color: var(--color-light);
+  }
+}
+
+.list>* {
+  margin: 0;
+  border-radius: var(--border-5);
+}
+
+/* Form */
+.form-group {
+  position: relative;
+  padding: 0.3em;
+
+  label,
+  input {
+    text-align: left;
+    display: block
+  }
+
+  input {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 5px 0 5px 0;
+    padding: 5px;
+    border-radius: var(--border-5);
+    background-color: var(--color-light);
+    color: var(--color-black);
+  }
+}
+
+.inline-input {
+  display: flex;
+
+  input {
+    flex: 2;
+    margin: 5px 0 5px 0;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    background-color: var(--color-light);
+    color: var(--color-black);
+  }
+
+  button {
+    flex: 1;
+    border-radius: 0 5px 5px 0;
+    
+  }
+}
+
+/* Button */
+.button-primary {
+  background-color: var(--button-primary);
+  margin: 5px 0 5px 0;
+  color: var(--color-white);
+}

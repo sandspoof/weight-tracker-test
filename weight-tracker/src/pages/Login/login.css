@@ -1,3 +1,1 @@
-.nice-color {
-    color: var(--color-grey)
-}
+@import url('../Main/main.css');
